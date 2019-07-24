@@ -5,7 +5,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Map;
+//@Component 添加这个注释方便Spring扫描器
 @Component
+//加载配置文件配置,通过Set方法注入对象
 @ConfigurationProperties(prefix = "project")
 public class User {
     private List<Map<String,String>> users;

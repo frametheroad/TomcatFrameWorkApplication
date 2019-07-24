@@ -1,7 +1,10 @@
 server:
+  #启动端口
   port: 8899
+  #项目根路径
   servlet:
     context-path: /service
+#启动环境
 spring:
   profiles:
     active: dev

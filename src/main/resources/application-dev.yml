@@ -1,8 +1,11 @@
+#定义当前配置环境
 spring:
   profiles:
     active: dev
+#配置日志配置路径使用${spring.profiles.active}动态加载Log配置
 logging:
   config: classpath:logCfg/logback-${spring.profiles.active}.xml
+#自定义配置文件,后续用于加载成JavaBean
 project:
   users:
     - {name: zhangsan,password: zs123,uname: 天上的云}
