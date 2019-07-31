@@ -12,9 +12,7 @@ import redis.clients.jedis.JedisPool;
  **/
 public class RedisUtil {
 
-    private static Logger log = LoggerFactory.getLogger(JedisConfig.class);
-
-    //private static JedisConfig jedisConfig;
+    private static Logger log = LoggerFactory.getLogger(RedisUtil.class);
 
     private static Jedis jedis = null;
 
@@ -22,7 +20,7 @@ public class RedisUtil {
 
     private static final int DEFAULT_SETEX_TIMEOUT = 60;// setex的默认时间
 
-    private static JedisPool jedisPool = JedisConfig.redisPoolFactory();
+    private static JedisPool jedisPool = JedisFactory.redisPoolFactory();
 
     private static void returnSource() {
         if (jedis != null)

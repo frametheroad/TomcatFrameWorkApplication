@@ -1,6 +1,5 @@
 package com.frame;
 
-import com.frame.redis.RedisUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,7 +17,7 @@ public class RedisTest {
 
     @Test
     public void print() {
-        System.out.println(RedisUtil.getValue("name"));
+        System.out.println("");
     }
 
 }
