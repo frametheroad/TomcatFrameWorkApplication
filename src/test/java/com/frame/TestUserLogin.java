@@ -16,15 +16,17 @@ public class TestUserLogin {
     private static final Logger logger = LoggerFactory.getLogger(TestUserLogin.class);
     @Autowired
     UserLogin userLogin;
+
     @Test
-    public void login(){
+    public void login() {
         UserVo user = new UserVo();
         user.setName("zhangsan");
         user.setPassword("zs123");
         logger.info(userLogin.login(user).toString());
     }
+
     @Test
-    public void list(){
+    public void list() {
         logger.info(userLogin.list().toString());
     }
 }

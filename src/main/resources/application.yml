@@ -8,3 +8,10 @@ server:
 spring:
   profiles:
     active: dev
+
+#mongodb默认属性配置
+  data:
+    mongodb:
+      host: 192.168.0.50
+      port: 27017
+      database: testMongo

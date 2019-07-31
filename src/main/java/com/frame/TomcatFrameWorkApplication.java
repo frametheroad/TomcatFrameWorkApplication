@@ -8,6 +8,7 @@ import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class TomcatFrameWorkApplication {
+
     private static final Logger logger = LoggerFactory.getLogger(TomcatFrameWorkApplication.class);
     public static void main(String[] args) {
         ApplicationContext applicationContext = SpringApplication.run(TomcatFrameWorkApplication.class, args);
